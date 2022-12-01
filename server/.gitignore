@@ -1,0 +1,10 @@
+# Paper
+**/cache/
+/libraries/
+/logs/
+/versions/
+/world*
+server.jar
+
+# World Edit
+.archive-unpack/
