@@ -1,0 +1,2 @@
+# Edgeless Minecraft Server config
+
