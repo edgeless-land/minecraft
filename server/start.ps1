@@ -1,0 +1,1 @@
+C:\Users\micro\.jdks\sapmachine-17.0.5\bin\java.exe -jar server.jar --nogui
