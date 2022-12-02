@@ -8,3 +8,5 @@ services:
       - "25565:25565"
     volumes:
       - /opt/minecraft/worlds:/app/server/worlds
+      - /opt/minecraft/logs:/app/server/logs
+      - /opt/minecraft/dynmap:/app/server/plugins/dynmap

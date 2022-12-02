@@ -8,3 +8,6 @@ server.jar
 
 # World Edit
 .archive-unpack/
+
+# Dynmap
+/plugins/dynmap/
