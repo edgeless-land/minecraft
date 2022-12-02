@@ -10,3 +10,9 @@ services:
       - /opt/minecraft/worlds:/app/server/worlds
       - /opt/minecraft/logs:/app/server/logs
       - /opt/minecraft/dynmap:/app/server/plugins/dynmap
+  caddy:
+    image: caddy:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    command: caddy reverse-proxy --from https://mc.edgeless.land --to http://minecraft:8123
