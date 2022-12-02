@@ -7,7 +7,12 @@ ADD https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/300/download
 
 WORKDIR /app/server
 
-EXPOSE 19132
+# Java
 EXPOSE 25565
+# Bedrock
+EXPOSE 19132
 
-ENTRYPOINT ["java", "-jar", "server.jar"]
+# Dynmap
+EXPOSE 8123
+
+ENTRYPOINT ["java", "-Xmx2G", "-Xms2G", "-jar", "server.jar", "nogui"]
