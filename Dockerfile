@@ -7,6 +7,7 @@ ADD https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/300/download
 
 WORKDIR /app/server
 
+EXPOSE 19132
 EXPOSE 25565
 
 ENTRYPOINT ["java", "-jar", "server.jar"]
