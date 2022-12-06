@@ -14,15 +14,16 @@ regions:
         min: {x: 231, y: 73, z: -175}
         max: {x: 239, y: 128, z: -160}
         members: {}
-        flags: {greeting: '"Welcome to Australia!"', mob-spawning: deny}
+        flags: {greeting: '"Welcome to Australia!"', mob-spawning: deny,
+            other-explosion: deny, creeper-explosion: deny, damage-animals: allow,
+            pistons: deny, heal-amount: 5, ghast-fireball: deny, firework-damage: deny,
+            mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 0
     __global__:
         members: {}
-        flags: {other-explosion: deny, creeper-explosion: deny, damage-animals: allow,
-            pistons: deny, heal-amount: 5, ghast-fireball: deny, firework-damage: deny,
-            mob-spawning: deny}
+        flags: {}
         owners: {}
         type: global
         priority: 0
